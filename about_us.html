@@ -1,0 +1,572 @@
+{% load static %}
+<!doctype html>
+<body style="background-color:rgb((15, 15, 15));"></body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Tribe Connect</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'carousel.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Tribe Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact <span class="sr-only"></span></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    
+
+    <main role="main">
+
+      <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="{% static '1.jpg' %}" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>TribeGuru.</h1>
+                <p>Education for all.</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9002" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="{% static '3.jpg' %}" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Tribe IoT</h1>
+                <p>Precisin agriculture</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9003" role="button">Go to Dashboard</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="{% static '2.jpg' %}" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Home Stay</h1>
+                <p>Stay and explore the beauty of Chattisgarh</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9004" role="button">Book a stay</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="fourth-slide" src="{% static '4.jpg' %}" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Health Care</h1>
+                <p>Quick & Convinient Health Check</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9001" role="button">Get a Health Check</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mission Statement</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="/mission" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Success Story</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="/success" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project Verticals</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="/verticals" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <!-- </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+        <h1 class="display-4" style="color:rgb(11, 211, 238);">About Us</h1>
+        <hr class="featurette-divider">
+
+        
+
+        <p class="text-justify" style="color:rgb(15, 15, 15);">
+          Tribe connect is an innovative integrated platform, developed by the sponsorship of the Ministry of Electronics and Information technology (MeitY), to provide sustainable Tribal livelihood by utilization of the latest technology Internet of Things, and Artificial Intelligence. The integrated platform is developed under the collaboration of three premier research and development Institutes of India, the Indian Institute of Technology Kanpur, the Indian Institute of Technology Kharagpur, and the International Institute of Information Technology, Naya Raipur, under the expert supervision of research and development teams members of Indian Institute of Technology Kanpur, Indian Institute of Technology Kharagpur, and International Institute of Information Technology, Naya Raipur.
+           The Tribe Connect software and hardware gadgets and instruments development team consist of members having an expert view in Computer Science Engineering, Project Management, Electrical, and Electronics Engineering as well Electronics and Communication Engineering.
+          </p>
+          <p class="text-justify" style="color:rgb(78, 222, 241);"> <strong> Ministry Of Electronics and Information Technology
+            (MeitY) </strong>
+          </p>
+           <p class="text-justify" style="color:rgb(15, 15, 15);"> The Ministry of Electronics and Information Technology is an associative agency of the Government of India which empowers as well as promotes e-governance, innovation, research, and development for substantial growth in the field of electronics, information technology, and electronic Industries. Currently, MeitY is operating under the Leadership of Shri Ravi Shankar Prasad, Minister of Electronics and Information Technology.
+            </p>
+           <!-- <hr class="featurette-divider">-->
+            <h5 class="display-8" style="color:rgb(238, 11, 11);">Research And Development  Institute and Team Investigator
+
+            </h5>
+            <hr style="height:2px;border-width:0;color:white;background-color: white">
+            
+            <h5> <a style="color:rgb(11, 211, 238);" href="https://www.iitk.ac.in/">Indian Institute of Technology, Kanpur
+
+            </a></h5>
+                <p class="text-justify" style="color:rgb(15, 15, 15);">Indian Institute of Technology, Kanpur is established in 1959 by the Government of India. IIT Kanpur is one of the premier institutes declared as an Institute of National Importance by the Government of India under the Institutes of Technology Act.  The main objective of the Institute is to offer significant education and conduct innovative research of the premier standard and give leadership in technological innovation.
+              </p>
+
+              <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading" style="color:rgb(15, 15, 15);">Dr. Subhas C. Misra</h2>
+                     <span  style="color:rgb(11, 211, 238);">Professor and Chief Investigator</span></h2>
+                     <p> <a style="color:rgb(11, 211, 238);" href="http://home.iitk.ac.in/~subhasm/">http://home.iitk.ac.in/~subhasm/</a></p>
+                  <p  class="text-justify" class="lead" style="color:rgb(15, 15, 15);" >Professor Subhas Chandra Misra is currently serving as a Professor in the Department of Industrial and Management Engineering, Indian Institute of Technology Kanpur. Prior Professor Misra is Advisor, Indo Canada Education Council ,a Visiting Scientist at Harvard University & SUNY Buffalo, USA, Visiting Faculty at Defence Engineering College, Ethiopia and Ryerson University, Toronto, Canada, Senior Project Advisor in Supernet Solutions Scarborough, Canada, Project Advisor at Detailed Hosting, Scarborough, Canada, and Software Developer at Nortel Networks, Ottawa, Ontario, Canada, and Assistant Executive Engineer in Indian Telephone Industries, Mankapur, UP, India. Dr. Misra is a research Fellow of Carleton University, Canada, and NSERC Fellow of Harvard University, USA. Dr. Misra's research interest area includes Business Process Management, Managing Supply Chain Services, Change and Risk Management, Project Management, Business Analytics, Data Analysis, Enterprise Resource Planning (ERP), E-Governance, and Information Systems. Dr. Misra is a pioneer researcher in the field of Business Management using Cloud, Software Quality Management, Business Process Modelling, Business Process Patterns.Dr. Misra published numerous books and several research papers in International Journals and International Conferences. </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img src="http://home.iitk.ac.in/~subhasm/scm-picture.jpg" style="width:400px;height:600px;">
+                 <!-- <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+                </div>
+                
+              </div>
+              <div class="row featurette"></div>
+                <h5> <a style="color:rgb(11, 211, 238);" href="http://iitkgp.ac.in/">Indian Institute of Technology, Kharagpur
+
+                </a></h5>
+                <p class="text-justify" style="color:rgb(15, 15, 15);">
+                  Indian Institute of Technology, Kharagpur is established in 1951 by the Government of India. IIT Kharagpur is the first one among the premier institutes declared as an Institute of National Importance by the Government of India under the Institutes of Technology Act. The Institute is devoted to offer significant scientific education and conduct innovative research and developments of the premier standard and give leadership for the technological environment.
+                  </p>
+             
+                  <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                      <h2 class="featurette-heading" style="color:rgb(15, 15, 15);">Dr. Sudip Misra </h2>
+                      <span style="color:rgb(11, 211, 238);">Professor and Chief Investigator</span></h2>
+                      <p> <a style="color:rgb(11, 211, 238);" href="https://cse.iitkgp.ac.in/~smisra/">https://cse.iitkgp.ac.in/~smisra/</a></p>
+                            <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);" >Professor Sudip Misra is an Abdul Kalam Technology Innovation National Fellow in the Department of Computer Science and Engineering at the Indian Institute of Technology Kharagpur. Dr. Misra received his doctoral research degree from the Department of Computer Science, Carleton University, Ottawa, Canada. Dr. Misra's research interests include Wireless Sensor Networks and the Internet of Things (IoT). Dr. Misra is associated with the IEEE association and Serving as the Associate Editor of different distinguished journals such as the IEEE Transactions on Mobile Computing, IEEE Transactions on Vehicular Technology, IEEE Transactions on Sustainable Computing, IEEE Network, and IEEE Systems Journal. Dr. Misra is the Fellow of the National Academy of Sciences (NASI), India, Indian National Academy of Engineering (INAE), British Computer Society (BCS), UK, Royal Society of Public Health (RSPH), UK, the Institution of Engineering and Technology (IET), UK, and the Institution of Electronics and Telecommunications Engineering (IETE), India. Dr. Misra is a distinguished lecturer of the IEEE Communications Society and Executive Committee of IEEE Kharagpur Section. Presently, he is also serving as a Vice-Chair of the IEEE Kharagpur Section. Dr. Misra is currently acting as a Director and Co-Founder of the IoT startup, Sensor Drops Networks Private Limited</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                      <img src="https://cse.iitkgp.ac.in/~smisra/sudip-picture.jpg" style="width:400px;height:600px;">
+                     <!-- <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+                    </div>
+                  </div>
+                  
+                  <h5> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/">International Institute of Information Technology, Naya Raipur
+
+                  </a></h5>
+                  <P class="text-justify" style="color:rgb(15, 15, 15);">
+                    Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur, Premier Indian Institute,  established in 2015, under a joint venture of  Chhattisgarh State Government and National Thermal Power Corporation (NTPC), under  International Institute of Information Technology University Act, 2013. Institute is devoted to practice distinction in higher education, research, and development in Information Technology and allied disciplines
+                    </P>
+                    <div class="row featurette">
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading" style="color:rgb(15, 15, 15);">Dr. Debanjan Das</h2>
+                        
+                        <span  style="color:rgb(11, 211, 238);">Assistant Professor  and Chief Investigator</span></h2>
+                         <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1596">https://www.iiitnr.ac.in/node/1596</a></p>
+                        <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);">Dr. Debanjan Das is serving as an Assistant Professor in the Department of Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Debanjan was serving as a research assistant in the BioMEMS Lab of the School of Medical Science & Technology at the Indian Institute of Technology Kharagpur. Dr. Das is awarded a doctoral degree and master of technology degree from the Department of Electrical Engineering at Indian Institute of Technology Kharagpur in the area of Sensor and Instrumentation. Dr. Das is currently an active member of IEEE and IEEE Engineering Medical Biology Society, IEEE Instrumentation & Measurement Society, and Biophysical Society. Dr. Das's research areas include Internet of things & Sensors, Medical Internet of things (m-IoT), Agricultural Internet of things (a-IoT), Signal Processing, BioMEMS & Microfluidics, Sensors & Instruments, Energy harvester, Control & Robotics.</p>
+                      </div>
+                      <div class="col-md-5">
+                        <img src="https://www.iiitnr.ac.in/sites/default/files/faculty_photo/debanjan.jpg" style="width:400px;height:500px;" >
+                        <!--<img class="https://www.farmmanagement.pro/wp-content/uploads/2018/09/precisionag2909-620x330.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+                       
+                      </div>
+                    </div>
+            
+                    
+            
+            
+                    <div class="row featurette">
+                      <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading" style="color:rgb((15, 15, 15));">Dr. Venkanna U </h2>
+                        <span style="color:rgb(11, 211, 238);" >Assistant Professor and Chief Investigator</span></h2>
+                        <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1290">https://www.iiitnr.ac.in/node/1290</a></p>
+                        <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);"> Dr. Venkanna U. is an Assistant Professor in the Department of Computer Science and Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, he was a faculty at SR Engineering College, Warangal and Christu Jyoti Institute of Technology and Science, Warangal. Dr. Venkanna received a doctoral degree from the National Institute of Technology, Trichy, and earned an MHRD scholarship during his doctoral tenure. Dr. Venkanna published numerous numbers of research papers in International Journals and International Conferences. Dr. Venkanna research Interest includes Software Defined Networks, Internet of things, Data plane programmability, Networks Security, Self Driving networks.</p>
+                      
+                    </p>
+                  </div>
+                      <div class="col-md-5 order-md-1">
+                        <img src="https://www.iiitnr.ac.in/sites/default/files/faculty_photo/Venkanna1.jpg" style="width:400px;height:500px;">
+                      </div>
+                    </div>
+                   
+                    <!--<hr class="featurette-divider">-->
+                    <div class="row featurette"> 
+                      <div class="col-md-7">
+                        <h2 class="featurette-heading" style="color:rgb((15, 15, 15));">Dr. Rajarshi Mahapatra</h2>
+                         <span  style="color:rgb(11, 211, 238);">Associate Professor and Co-Investigator</span></h2>
+                         <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1613">https://www.iiitnr.ac.in/node/1613</a></p>
+                        <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);">Dr. Rajarshi Mahapatra is an Associate Professor in the Department of Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Mahapatra served in several academic institutes and industries. Dr. Mahapatra worked on Software Defined Radio (SDR) and Electronic warfare system in Rockwell Collins, Hyderabad. He was a postdoctoral scholar in CEA-LETI, Grenoble, France during 2010-11. Dr. Mahapatra is an active reviewer for several IEEE transactions, IEEE magazine, a publication from Elsevier, Springer, Wiley, and many IEEE conferences. Dr. Mahapatra has served as an organizing member and TPC member for several national and international IEEE conferences. Dr. Mahapatra is IEEE Senior Member and also a ComSoc member.Dr. Mahapatra research interest includes Cognitive radio, Optical access networks, Heterogeneous wireless network, Signal processing Dynamic spectrum access, Green communication, and Molecular communication.
+            
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <img src="https://www.iiitnr.ac.in/sites/default/files/faculty_photo/rsz_newcut_0.jpg" style="width:400px;height:500px;">
+                        <!--<img class="https://www.farmmanagement.pro/wp-content/uploads/2018/09/precisionag2909-620x330.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+                      </div>
+                    </div>
+                    
+                   <!---- <hr class="featurette-divider">
+                    <h5 class="display-8" class="text-centre" style="color:rgb(245, 240, 240);">RESEARCH AND DEVELOPMENT  TEAM  INVESTIGATOR </h5>-->
+              <!--<img src="home\static" class="card-img-top" alt="...">
+              <h1 class="display-4">Dr. Subhas C. Misra</h1>
+              <p>
+                Professor and Chief Investigator</p>
+                <p>http://home.iitk.ac.in/~subhasm/</p>
+               <P class="text-justify"> Professor Subhas Chandra Misra is currently serving as a Professor in the Department of Industrial and Management Engineering, Indian Institute of Technology Kanpur. Prior Professor Misra is Advisor, Indo Canada Education Council ,a Visiting Scientist at Harvard University & SUNY Buffalo, USA, Visiting Faculty at Defence Engineering College, Ethiopia and Ryerson University, Toronto, Canada, Senior Project Advisor in Supernet Solutions Scarborough, Canada, Project Advisor at Detailed Hosting, Scarborough, Canada, and Software Developer  at Nortel Networks, Ottawa, Ontario, Canada, and Assistant Executive Engineer in Indian Telephone Industries, Mankapur, UP, India. Dr. Misra is a research Fellow of Carleton University, Canada, and NSERC Fellow of Harvard University, USA.
+                 Dr. Misra's research interest area includes Business Process Management, Managing Supply Chain Services, Change and Risk Management, Project Management, Business Analytics, Data Analysis, Enterprise Resource Planning (ERP), E-Governance, and Information Systems. Dr. Misra is a pioneer researcher in the field of  Business Management using Cloud, Software Quality Management, Business Process Modelling, Business Process Patterns.Dr. Misra published numerous books and several research papers in International Journals and International Conferences.
+                </p>
+                <h5 class="display-6">INDIAN INSTITUTE OF TECHNOLOGY KHARAGPUR</h5>
+                <p>
+                  Indian Institute of Technology, Kharagpur is established in 1951 by the Government of India. IIT Kharagpur is the first one among the premier institutes declared as an Institute of National Importance by the Government of India under the Institutes of Technology Act. The Institute is devoted to offer significant scientific education and conduct innovative research and developments of the premier standard and give leadership for the technological environment.
+                  </p>
+                  <h1 class="display-4">Dr. Sudip Misra</h1>
+                  
+                    <p>Professor and Chief Investigator</p>
+                    https://cse.iitkgp.ac.in/~smisra/</p>
+                    
+                    <p class="text-justify">Professor Sudip Misra is an Abdul Kalam Technology Innovation National Fellow in the Department of Computer Science and Engineering at the Indian Institute of Technology Kharagpur. Dr. Misra received his doctoral research degree from the Department of  Computer Science, Carleton University, Ottawa, Canada. Dr. Misra's research interests include Wireless Sensor Networks and the Internet of Things (IoT).
+                    Dr. Misra is associated with the IEEE association and Serving as the Associate Editor of different distinguished journals such as the IEEE Transactions on Mobile Computing, IEEE Transactions on Vehicular Technology, IEEE Transactions on Sustainable Computing, IEEE Network, and IEEE Systems Journal. 
+                    Dr. Misra is the Fellow of the National Academy of Sciences (NASI), India, Indian National Academy of Engineering (INAE), British Computer Society (BCS), UK, Royal Society of Public Health (RSPH), UK, the Institution of Engineering and Technology (IET), UK,  and the Institution of Electronics and Telecommunications Engineering (IETE), India. 
+                    Dr. Misra is a distinguished lecturer of the IEEE Communications Society and Executive Committee of IEEE Kharagpur Section. Presently, he is also serving as a Vice-Chair of the IEEE Kharagpur Section. Dr. Misra is currently acting as a Director and Co-Founder of the IoT startup, Sensor Drops Networks Private Limited
+                    </p>
+                    <P>INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY, NAYA RAIPUR
+                      Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur, Premier Indian Institute,  established in 2015, under a joint venture of  Chhattisgarh State Government and National Thermal Power Corporation (NTPC), under  International Institute of Information Technology University Act, 2013. Institute is devoted to practice distinction in higher education, research, and development in Information Technology and allied disciplines
+                      </P>
+                      <h1 class="display-4">Dr. Debanjan Das</h1>
+                     
+                        <P>Assistant Professor and Chief Investigator
+                        https://www.iiitnr.ac.in/node/1596</P>
+
+                       <P class="text-justify"> Dr. Debanjan Das is serving as an Assistant Professor in the Department of Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Debanjan was serving as a research assistant in the BioMEMS Lab of the School of Medical Science & Technology at the Indian Institute of Technology Kharagpur.  Dr. Das is awarded a doctoral degree and master of technology degree from the Department of Electrical Engineering at  Indian Institute of Technology Kharagpur in the area of Sensor and Instrumentation.  Dr. Das is currently an active member of IEEE and IEEE Engineering Medical Biology Society, IEEE Instrumentation & Measurement Society, and Biophysical Society.
+                        Dr. Das's research areas include Internet of things & Sensors, Medical Internet of things (m-IoT), Agricultural Internet of things (a-IoT), Signal Processing, BioMEMS & Microfluidics, Sensors & Instruments, Energy harvester, Control & Robotics.
+                        </P>
+                        <h1 class="display-4">Dr. Venkanna U.</h1>
+                        <P>
+                          Assistant Professor and Chief Investigator
+                          https://www.iiitnr.ac.in/node/1290</P>
+                         <P class="text-justify">Dr. Venkanna U. is an Assistant Professor in the Department of Computer Science and Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, he was a faculty at SR Engineering College, Warangal and Christu Jyoti Institute of Technology and Science, Warangal. Dr. Venkanna received a doctoral degree from the National Institute of Technology, Trichy, and earned an MHRD scholarship during his doctoral tenure. Dr. Venkanna published numerous numbers of research papers in International Journals and International Conferences.
+                          Dr. Venkanna research Interest includes Software Defined Networks,  Internet of things, Data plane programmability, Networks Security, Self Driving networks.
+                          </P>
+                          <h1 class="display-4">Dr. Rajarshi Mahapatra</h1>
+                          <P>Dr. Rajarshi Mahapatra
+                            Associate Professor and Co-Investigator
+                            https://www.iiitnr.ac.in/node/1613</P>
+                            <P class="text-justify">Dr. Rajarshi Mahapatra is an Associate Professor in the Department of  Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Mahapatra served in several academic institutes and industries. Dr. Mahapatra worked on Software Defined Radio (SDR) and Electronic warfare system in Rockwell Collins, Hyderabad. He was a postdoctoral scholar in CEA-LETI, Grenoble, France during 2010-11.
+                            Dr. Mahapatra is an active reviewer for several IEEE transactions, IEEE magazine, a publication from Elsevier, Springer, Wiley, and many IEEE conferences. Dr. Mahapatra has served as an organizing member and TPC member for several national and international IEEE conferences. 
+                            Dr. Mahapatra is   IEEE Senior Member and also a ComSoc member.Dr. Mahapatra research interest includes Cognitive radio, Optical access networks, Heterogeneous wireless network, Signal processing Dynamic spectrum access, Green communication, and Molecular communication.
+                            </P>
+
+
+        <!-- <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div> -->
+
+      
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+<!-- FOOTER -->
+<!--<footer class="container">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>&copy; 2017-2018 Tribe Connect. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+</main>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="{% static 'popper.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!--<script src="{% static 'holder.min.js' %}"></script>
+</body>
+</html>
+
+      
+
+
+
+
+
+
+
+
+
+
+      <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="{% static '1.jpg' %}" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>TribeGuru.</h1>
+                <p>Education for all.</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9002" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="{% static '3.jpg' %}" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Tribe IoT</h1>
+                <p>Precisin agriculture</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9003" role="button">Go to Dashboard</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="{% static '2.jpg' %}" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Home Stay</h1>
+                <p>Stay and explore the beauty of Chattisgarh</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9004" role="button">Book a stay</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="fourth-slide" src="{% static '4.jpg' %}" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Health Care</h1>
+                <p>Quick & Convinient Health Check</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9001" role="button">Get a Health Check</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mission Statement</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="/mission" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Success Story</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="/success" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project Verticals</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="/verticals" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <!-- </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+      
+
+      <!--  <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading" style="color:rgb(238, 11, 11);">Dr. Subhas C. Misra</h2>
+               <span  style="color:rgb(11, 211, 238);">Professor and Chief Investigator</span></h2>
+               <p> <a style="color:rgb(11, 211, 238);" href="http://home.iitk.ac.in/~subhasm/">http://home.iitk.ac.in/~subhasm/</a></p>
+            <p  class="text-justify" class="lead" style="color:rgb(15, 15, 15);" >Professor Subhas Chandra Misra is currently serving as a Professor in the Department of Industrial and Management Engineering, Indian Institute of Technology Kanpur. Prior Professor Misra is Advisor, Indo Canada Education Council ,a Visiting Scientist at Harvard University & SUNY Buffalo, USA, Visiting Faculty at Defence Engineering College, Ethiopia and Ryerson University, Toronto, Canada, Senior Project Advisor in Supernet Solutions Scarborough, Canada, Project Advisor at Detailed Hosting, Scarborough, Canada, and Software Developer at Nortel Networks, Ottawa, Ontario, Canada, and Assistant Executive Engineer in Indian Telephone Industries, Mankapur, UP, India. Dr. Misra is a research Fellow of Carleton University, Canada, and NSERC Fellow of Harvard University, USA. Dr. Misra's research interest area includes Business Process Management, Managing Supply Chain Services, Change and Risk Management, Project Management, Business Analytics, Data Analysis, Enterprise Resource Planning (ERP), E-Governance, and Information Systems. Dr. Misra is a pioneer researcher in the field of Business Management using Cloud, Software Quality Management, Business Process Modelling, Business Process Patterns.Dr. Misra published numerous books and several research papers in International Journals and International Conferences. </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" style="color:rgb(238, 11, 11);">Dr. Sudip Misra </h2>
+            <span style="color:rgb(11, 211, 238);">Professor and Chief Investigator</span></h2>
+            <p> <a style="color:rgb(11, 211, 238);" href="https://cse.iitkgp.ac.in/~smisra/">https://cse.iitkgp.ac.in/~smisra/</a></p>
+                  <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);" >Professor Sudip Misra is an Abdul Kalam Technology Innovation National Fellow in the Department of Computer Science and Engineering at the Indian Institute of Technology Kharagpur. Dr. Misra received his doctoral research degree from the Department of Computer Science, Carleton University, Ottawa, Canada. Dr. Misra's research interests include Wireless Sensor Networks and the Internet of Things (IoT). Dr. Misra is associated with the IEEE association and Serving as the Associate Editor of different distinguished journals such as the IEEE Transactions on Mobile Computing, IEEE Transactions on Vehicular Technology, IEEE Transactions on Sustainable Computing, IEEE Network, and IEEE Systems Journal. Dr. Misra is the Fellow of the National Academy of Sciences (NASI), India, Indian National Academy of Engineering (INAE), British Computer Society (BCS), UK, Royal Society of Public Health (RSPH), UK, the Institution of Engineering and Technology (IET), UK, and the Institution of Electronics and Telecommunications Engineering (IETE), India. Dr. Misra is a distinguished lecturer of the IEEE Communications Society and Executive Committee of IEEE Kharagpur Section. Presently, he is also serving as a Vice-Chair of the IEEE Kharagpur Section. Dr. Misra is currently acting as a Director and Co-Founder of the IoT startup, Sensor Drops Networks Private Limited</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading" style="color:rgb(238, 11, 11);">Dr. Debanjan Das</h2>
+            
+            <span  style="color:rgb(11, 211, 238);">Assistant Professor  and Chief Investigator</span></h2>
+             <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1596">https://www.iiitnr.ac.in/node/1596</a></p>
+            <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);">Dr. Debanjan Das is serving as an Assistant Professor in the Department of Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Debanjan was serving as a research assistant in the BioMEMS Lab of the School of Medical Science & Technology at the Indian Institute of Technology Kharagpur. Dr. Das is awarded a doctoral degree and master of technology degree from the Department of Electrical Engineering at Indian Institute of Technology Kharagpur in the area of Sensor and Instrumentation. Dr. Das is currently an active member of IEEE and IEEE Engineering Medical Biology Society, IEEE Instrumentation & Measurement Society, and Biophysical Society. Dr. Das's research areas include Internet of things & Sensors, Medical Internet of things (m-IoT), Agricultural Internet of things (a-IoT), Signal Processing, BioMEMS & Microfluidics, Sensors & Instruments, Energy harvester, Control & Robotics.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="https://www.farmmanagement.pro/wp-content/uploads/2018/09/precisionag2909-620x330.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading" style="color:rgb(238, 11, 11);">Dr. Venkanna U. </h2>
+            <span style="color:rgb(11, 211, 238);" >Assistant Professor and Chief Investigator</span></h2>
+            <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1290">https://www.iiitnr.ac.in/node/1290</a></p>
+           
+            <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);"> Dr. Venkanna U. is an Assistant Professor in the Department of Computer Science and Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, he was a faculty at SR Engineering College, Warangal and Christu Jyoti Institute of Technology and Science, Warangal. Dr. Venkanna received a doctoral degree from the National Institute of Technology, Trichy, and earned an MHRD scholarship during his doctoral tenure. Dr. Venkanna published numerous numbers of research papers in International Journals and International Conferences. Dr. Venkanna research Interest includes Software Defined Networks, Internet of things, Data plane programmability, Networks Security, Self Driving networks.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+       
+        <hr class="featurette-divider">
+               <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading" style="color:rgb(238, 11, 11);">Dr. Rajarshi Mahapatra</h2>
+             <span  style="color:rgb(11, 211, 238);">Associate Professor and Co-Investigator</span></h2>
+             <p> <a style="color:rgb(11, 211, 238);" href="https://www.iiitnr.ac.in/node/1613">https://www.iiitnr.ac.in/node/1613</a></p>
+            <p class="text-justify" class="lead" style="color:rgb(15, 15, 15);">Dr. Rajarshi Mahapatra is an Associate Professor in the Department of Electronics and Communication Engineering, Dr. Shyama Prasad Mukherjee International Institute of Information Technology, Naya Raipur. Prior to joining this institute, Dr. Mahapatra served in several academic institutes and industries. Dr. Mahapatra worked on Software Defined Radio (SDR) and Electronic warfare system in Rockwell Collins, Hyderabad. He was a postdoctoral scholar in CEA-LETI, Grenoble, France during 2010-11. Dr. Mahapatra is an active reviewer for several IEEE transactions, IEEE magazine, a publication from Elsevier, Springer, Wiley, and many IEEE conferences. Dr. Mahapatra has served as an organizing member and TPC member for several national and international IEEE conferences. Dr. Mahapatra is IEEE Senior Member and also a ComSoc member.Dr. Mahapatra research interest includes Cognitive radio, Optical access networks, Heterogeneous wireless network, Signal processing Dynamic spectrum access, Green communication, and Molecular communication.
+
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="https://www.farmmanagement.pro/wp-content/uploads/2018/09/precisionag2909-620x330.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      -->
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+              
+          
+      <hr style="height:2px;border-width:0;color:white;background-color: white">          
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p style="color:rgb((15, 15, 15));">&copy; 2020-2021 Tribe Connect. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{% static 'holder.min.js' %}"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+{% load static %}
+<!doctype html>
+<body style="background-color:rgb(255, 255, 255);"></body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Tribe Connect</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'carousel.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Tribe Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact <span class="sr-only"></span></a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="{% static '1.jpg' %}" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>TribeGuru.</h1>
+                <p>Education for all.</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9002" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="{% static '3.jpg' %}" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Tribe IoT</h1>
+                <p>Precisin agriculture</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9003" role="button">Go to Dashboard</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="{% static '2.jpg' %}" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Home Stay</h1>
+                <p>Stay and explore the beauty of Chattisgarh</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9004" role="button">Book a stay</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="fourth-slide" src="{% static '4.jpg' %}" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Health Care</h1>
+                <p>Quick & Convinient Health Check</p>
+                <p><a class="btn btn-lg btn-primary" href="http://203.110.240.164:9001" role="button">Get a Health Check</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mission Statement</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="/mission" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Success Story</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="/success" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <!-- <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project Verticals</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="/verticals" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        <!-- </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+        <h1 class="display-4" style="color:rgb((15, 15, 15));">Success Story</h1>
+        <hr class="featurette-divider">
+        <p class="text-justify" style="color:rgb((15, 15, 15));">
+          The research team successfully identified, analyzed, and find the best suitable tribal village in Chhattisgarh for proceeding ahead with the integrated Tribe Connect project.
+          Villagers residing in the village discussed their problems with the research team and shown eagerness to adopt new technology for their Sustainable development and implement the Internet of Things and Artificial Intelligence for growth.
+          <p class="text-justify" style="color:rgb((15, 15, 15));">FINDINGS OF RESEARCH TEAM</p>
+           <p>Fulkarra is a small tribal village situated in Gariyaband Tehsil, Chhattisgarh.108 kilometers south of state capital Raipur. As per the government report, the total number population of Fulkarra village is 1898 which consists of 480 families and the total number of Scheduled tribe population in this region is 1100. On comparing the sex ratio of the village, the number of male candidates is 935 and the number of Female candidates of this village is 963.
+          Fulkarra is a village is utilizing 4 G LTE network connectivity and 50% of the total population of this village are aware of internet connectivity and are familiar with smartphones. As a government policy of Chhattisgarh, to the inherent tribal village with the outside world, in 2018 government authorities have distributed 200 smartphones to the people in this village.
+          </p>
+          
+         <h3 class="text-justify" style="color:rgb(238, 11, 11);"> MAIN CHALLENGES OF VILLAGE</h3>
+         <p class="text-justify" style="color:rgb((15, 15, 15));"> Healthcare Facilities in the village consist of only one Primary Healthcare Centre (PHC) which is having Doctors, Nurse, and Multi-Purpose Health Worker.
+          Lack of modernized medical instrument and lack of technological advanced instruments, Doctor is only able to check primarily disease or symptoms of villagers as a result mostly they refer villages to the district hospitals for better care.
+           The doctor is capable of providing only general medicines for Cold, Cough, and fever, etc. PHC is equipped with medical apparatus for checking Hypertension, diabetes, and weight but the most prominent diseases in Fulkarra identified are Leprosies or Skin Infection, Tuberculosis (TB), also genetic diseases are Sickle Cell, along with all these diseases villages are having of seasonal Infections such as Pneumonia during the winter season, Diarrhea during Summer season, Malaria and Dengu during Monsoon season.
+          In social and health care sector Malnutrition problem is one of the serious problems of this region as per health care reports, most of the village Children & Pregnant Women are suffering from malnutrition problem The Existing Aaganwadi is taking care of pregnant women like weight testing, Diet plan, Providing Iron and calcium tablets but required advanced instrument for efficient monitoring.
+          On focusing education sector, in this village, the children are using traditional methods of education but require animated methods of learning or story resembling solutions for primary schools, middle school and high school subjects like Maths, Environment and English Communication requires more attractive methods of learning which is possible through smart classes but in this village, there are no smart classes but the population is willing to adapt to new learning techniques and enhancements.
+          Economic Growth in tribal village Fulkara is mostly dependent mainly on agriculture, 90% of the total population is dependent on agriculture. Paddy is the main crop grown in this area, Farmers cultivate paddy crops from July to November and only a few farmers grow green leafy vegetables and pulses and in the other halves of the year, they are dependent on government schemes such as Mahatma Gandhi National Rural Employment. 
+          In the agriculture sector, farmers are dependent on bore wells or tube wells as the main sources of irrigation, other natural methods include monsoon rains, river water coming from Mahanadi and Pari. Tribal Department i.e. Integrated Tribal Development Agency (ITDA) Chhattisgarh has provided land and bore wells for cultivation for only limited farmers. 
+          Due to lack of proper management, Fertilizers are supplied by government agencies at the Mandi system at a lower price but due to lack of supply chain management, farmers prefer private dealers.
+          In this region are paddy, gram, Mussoorie are preferred which are available in stock centers at subsidized prices but due to lack of stock and management of stock centers, most villagers are dependent on local vendors which sell at higher prices.
+          The government is providing a market platform where farmers get minimum support Price but the market structure is not properly managed and coordinated.
+          Villagers have lack of knowledge about rotational farming and cultivation of new crops, Urea, and other fertilizers are sprayed only by assumption, not by definite measurement, which leads to a nutritional imbalance in the soil, pesticides are also purchased from private suppliers.
+          Other problems farmers are dealing with is lack of knowledge about growing other crops, animal intrusions spoil farming crops, they need a system that can detect foreign organisms entering the field, Serious rice crop diseases which are dangerous for crop yield such diseases like brown planthopper (Brown Mau) need early detection. The village lacks a platform for local talent Promotion, the communication with the outside world is limited
+         </p>
+         
+         <h3 style="color:rgb(238, 11, 11);"> RESEARCH TEAM SUGGESTION/ DELIVERABLES THROUGH TRIBE CONNECT PLATFORM</h3>
+
+          <p style="color:rgb((15, 15, 15));">After finding problems of villagers, following are the objectives are
+             taken into consideration for the development prototype process.</P>
+          
+          <ul style="color:rgb((15, 15, 15));">
+            <li>	Establishment of ICT-based smart Anganwadi Kendra for children and pregnant women malnutrition care.</li>
+            <li>	Development of a mobile software application capable of detection of anemia in Pregnant Women and children.</li>
+            <li>	Development of a mobile application, for a Telemedicine facility for primary health care and diagnosis of community.</li>
+            <li>	Establishment of  software application for Farming-Disease prevention. </li>
+            <li>	Provision of IoT based  instrument for timely irrigation information.</li>
+            <li>	Provision of gadget for Well water quality monitoring.</li>
+            <li>	Provision of disaster monitoring and alerting system  by IoT connected devices.</li>
+            <li>	Organization of ICT based network to promote education.</li>
+            <li>  Development of ICT based E-Mandi platform for marketing the tribal products.</li>
+            <li>  Software application for the provision of basic e-Governance facility.</li>
+            <li>  Deployment of software application platform Local talent Promotion.</li>
+            <li>  Established communication with the outside world.</li>
+
+          </ul>
+          
+          </p>
+
+        <!-- <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div> -->
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+      <hr style="height:2px;border-width:0;color:white;background-color: white">
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p style="color:rgb((15, 15, 15));">&copy; 2020-2021 Tribe Connect. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{% static 'holder.min.js' %}"></script>
+  </body>
+</html>
